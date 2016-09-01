@@ -19,4 +19,12 @@ public class TestJunit {
         queue.add("Hola");
         assertEquals(queue.size(),1);
     }
+
+    @Test
+    public void queueShouldHaveTwoNodes() {
+        Queue<String> queue = new Queue<String>();
+        queue.add("Hola");
+        queue.add("Chau");
+        assertEquals(queue.size(),2);
+    }
 }
