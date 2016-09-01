@@ -17,13 +17,12 @@ public class NullNode<T> extends AbstractNode<T> {
         return this.nextNode;
     }
 
-    public T getValue() {
-        //Acá lanzar excepción.
-        return null;
+    public T getValue() throws AssertionError {
+        throw new AssertionError();
     }
 
-    public void removeFrom(Queue<T> queue) {
-        //Lanzar excpeción.
+    public void removeFrom(Queue<T> queue) throws AssertionError {
+        throw new AssertionError();
     }
 
     public void addNode(Queue<T> queue, T item) {
