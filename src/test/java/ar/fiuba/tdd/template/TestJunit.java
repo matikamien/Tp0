@@ -27,4 +27,28 @@ public class TestJunit {
         queue.add("Chau");
         assertEquals(queue.size(),2);
     }
+
+    @Test
+    public void topShouldReturnCorrectValue() {
+        Queue<String> queue = new Queue<String>();
+        queue.add("Hola");
+        assertEquals(queue.top(),"Hola");
+    }
+
+    @Test
+    public void itShouldRemoveANode() {
+        Queue<String> queue = new Queue<String>();
+        queue.add("Hola");
+        queue.remove();
+        assertEquals(queue.size(),0);
+    }
+
+    @Test
+    public void itShouldRemoveANode2() {
+        Queue<String> queue = new Queue<String>();
+        queue.add("Hola");
+        queue.add("Chau");
+        queue.remove();
+        assertEquals(queue.size(),1);
+    }
 }
