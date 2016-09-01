@@ -48,7 +48,8 @@ public class TestJunit {
         Queue<String> queue = new Queue<String>();
         queue.add("Hola");
         queue.add("Chau");
+        queue.add("Chau");
         queue.remove();
-        assertEquals(queue.size(),1);
+        assertEquals(queue.size(),2);
     }
 }
