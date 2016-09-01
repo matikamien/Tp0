@@ -1,12 +1,12 @@
 package ar.fiuba.tdd.template;
 
 /**
- * Created by matiaskamien on 30/08/16.
+ * Created by matiaskamien on 31/08/16.
  */
-public class Node<T> extends AbstractNode<T> {
+public class NullNode<T> extends AbstractNode<T> {
 
-    public Node(T data) {
-        this.data = data;
+    public NullNode() {
+        this.data = null;
     }
 
     public void setNextNode(AbstractNode<T> nextNode) {
@@ -18,19 +18,19 @@ public class Node<T> extends AbstractNode<T> {
     }
 
     public T getValue() {
-        return this.data;
+        //Acá lanzar excepción.
+        return null;
     }
 
     public void removeFrom(Queue<T> queue) {
-        queue.setFirstNode(this.nextNode);
+        //Lanzar excpeción.
     }
 
     public void addNode(Queue<T> queue, T item) {
-        this.nextNode = new Node<T>(item);
+        queue.setFirstNode(new Node<T>(item));
     }
 
     public int getSize() {
-        return (1 + this.nextNode.getSize());
+        return 0;
     }
-
 }
