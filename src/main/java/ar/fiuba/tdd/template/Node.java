@@ -7,6 +7,7 @@ public class Node<T> extends AbstractNode<T> {
 
     public Node(T data) {
         this.data = data;
+        this.nextNode = new NullNode<T>();
     }
 
     public void setNextNode(AbstractNode<T> nextNode) {

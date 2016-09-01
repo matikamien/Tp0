@@ -12,5 +12,11 @@ public class TestJunit {
         Queue<AbstractNode> queue = new Queue<AbstractNode>();
         assertEquals(queue.size(),0);
     }
-    
+
+    @Test
+    public void queueShouldHaveOneNode() {
+        Queue<String> queue = new Queue<String>();
+        queue.add("Hola");
+        assertEquals(queue.size(),1);
+    }
 }
