@@ -1,5 +1,5 @@
 # 75.10 Técnicas de Diseño - Template project
- ![Build Status](https://travis-ci.org/matikamien/template)
+ ![Build Status](https://travis-ci.org/matikamien/Tp0)
 
 Template Gradle project
 
